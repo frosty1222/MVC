@@ -11,6 +11,7 @@ class Router
         {
             $request->controller = "tasks";
             $request->controller = "MyTask";
+            $request->controller = "Student";
             $request->action = "index";
             $request->params = [];
         }

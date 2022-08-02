@@ -21,10 +21,10 @@ class Dispatcher
 
     public function loadController()
     {
-        // $name = $this->request->controller . "Controller";
+        $name = $this->request->controller . "Controller";
         // $file = ROOT . 'Controllers/' . $name . '.php';
         $prefix = 'MVC\\Controllers\\';
-        $controller =  $prefix."MyTaskController";
+        $controller =  $prefix.$name;
         return new $controller;
     }
 

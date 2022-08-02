@@ -1,15 +1,17 @@
 <?php
 namespace MVC\Core;
-    class Controller
+class Controller
     {
         var $vars = [];
         var $layout = "default";
-
+        var $string = "";
         function set($d)
         {
             $this->vars = array_merge($this->vars, $d);
         }
+        function string($string){
 
+        }
         function render($filename)
         {
             extract($this->vars);
